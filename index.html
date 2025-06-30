@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="icon" href="src/img/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Sapore di Vita</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-wine-glass" id="nav_logo"> Sapore di Vita</i>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#menu">Cardapio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <button class="btn-default">
+                Peça Aqui
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#menu">Cardapio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça Aqui
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O sabor que vai até
+                    <span>você</span>
+                </h1>
+                <p class="description">Sabores autênticos, ingredientes selecionados e uma experiência que vai além do prato.</p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver cardápio
+                    </a>
+                    <a href="tel:+55555555555" class="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (51) 98564-3602
+                    </a>
+                </div>
+
+                <div id="social-media-buttons">
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+
+                </div>
+
+            </div>
+            <div id="banner">
+                <img src="/src/img/prato1.png" alt="" srcset="">
+            </div>
+
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="/src/img/prato1.png" class="dish-image"  style="width: 150px; height: 150px;">
+                    <h3 class="dish-title">Mix de Brócolis e Tomate Grelhado</h3>
+                    <span class="dish-description">
+                        Uma combinação leve e nutritiva de brócolis crocantes e tomates grelhados, temperados com azeite extra virgem e um toque de pimenta-do-reino.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 25,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="/src/img/prato2.png" class="dish-image" alt=""  style="width: 150px; height: 150px;">
+                    <h3 class="dish-title">Pizza Pepperoni Suprema</h3>
+                    <span class="dish-description">
+                        Clássica e irresistível: massa artesanal crocante, molho especial da casa, generosas fatias de pepperoni e muçarela derretida.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 45,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="/src/img/prato3.png" class="dish-image" alt=""  style="width: 150px; height: 150px;">
+                    <h3 class="dish-title">Frango Rústico ao Legumes</h3>
+                    <span class="dish-description">
+                        Peito de frango grelhado, servido com legumes frescos salteados no azeite e ervas aromáticas. Sabor caseiro e saudável em cada garfada.
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 90,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <a href="https://storyset.com/customer" target="_blank">
+                <img src="/src/img/cooking.svg" id="testimonial_cook" alt="Customer illustrations by Storyset">
+                <p>Customer illustrations by Storyset</p>
+            </a>
+            <div id="testimonials_content">
+                <h2 class="section-title">Avaliações</h2>
+                <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="/src/img/retrato1.jpg" class="feedback-avatar">
+
+                        <div class="feedback-content">
+                            <p>Jean de Souza
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Muito satisfeito com a qualidade dos pratos e o atendimento. O frango com legumes é leve, saboroso e veio bem temperado. Dá pra sentir que os ingredientes são frescos. Recomendo demais!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="/src/img/retrato2.jpg" class="feedback-avatar">
+
+                        <div class="feedback-content">
+                            <p>Helena Dias
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "O ambiente é super aconchegante e a pizza de pepperoni é simplesmente maravilhosa! A massa crocante e o sabor marcante do pepperoni fizeram a experiência ainda melhor. Com certeza vou voltar mais vezes!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <img src="/src/img/wave.svg" alt="" >
+            <div id="footer_itens">
+                <span id="copyright">&copy 2025 Guilherme Soares</span>
+                <div id="social-media-buttons">
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
